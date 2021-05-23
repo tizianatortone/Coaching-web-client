@@ -1,166 +1,218 @@
 :root {
-  --text-font: "Montserrat", sans-serif;
-  --secondary-font: "Amiri", serif;
-  --heading-font: "Mr Dafoe", cursive;
+  --text-font: "Poppins", sans-serif;
+  --heading-font: "Amiri", serif;
 }
 
-body {
-  font-family: var(--text-font);
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ffb677;
 }
+
 .navbar {
-  background: #e6f7f7;
+  background: transparent;
+  width: 100%;
+  top: 0;
 }
 
 .navbar-brand {
-  color: #ff8364;
-}
-
-.navbar-brand:hover {
-  color: #ffdaa9;
+  color: #edf7fa;
 }
 .nav-link {
+  color: #edf7fa;
+}
+.nav-link:hover {
   color: #ff8364;
 }
-
-.nav-link:hover {
-  color: #ffdaa9;
+.hero {
+  background-image: url("/media/portada.JPG");
+  height: 100%;
+  background-size: 100% 100%;
+  background-position: center fixed;
+  background-repeat: no-repeat;
 }
-.container-fluid {
-  display: flex;
-  justify-content: space-evenly;
+.hero h1 {
+  font-family: "Meddon", cursive;
+  font-size: 150px;
+  color: #5f6caf;
+  text-align: right;
+  margin-right: 80px;
+  padding-top: 50px;
+  padding-right: 40px;
+  opacity: 0.8;
 }
-#portada {
-  text-align: center;
-  background: #e6f7f7;
-  color: #44558f;
-}
-
-#portada h2 {
-  font-family: var(--text-font);
-  font-size: 40px;
-
-  color: #44558f;
-}
-
-#portada h1 {
-  font-family: var(--text-font);
-  font-size: 120px;
-  margin-top: 60px;
-}
-#portada img {
-  max-width: 100%;
-  max-height: 100%;
-}
-h2 {
-  text-align: center;
-  font-size: 38px;
-  margin: 50px 30px;
-  font-family: var(--secondary-font);
-  color: #ffb677;
+.hero h2 {
+  font-family: "Meddon", cursive;
+  font-size: 35px;
+  color: #5f6caf;
+  text-align: right;
+  margin-right: 80px;
+  padding-right: 40px;
+  opacity: 0.5;
 }
 
 #phrase {
-  text-align: center;
-  margin: 50px;
+  text-align: right;
+  margin: 10px;
   margin-bottom: 35px;
   font-family: var(--text-font);
+  font-weight: 200;
   padding: 25px;
-  color: #557174;
-  opacity: 0.8;
+  color: #687980;
+}
+
+#initial {
+  padding-left: 100px;
+}
+
+h2 {
+  text-align: center;
+  font-family: var(--heading-font);
+  color: #5f6caf;
+  font-size: 40px;
+  font-weight: 200;
+  padding-top: 25px;
+}
+
+.big-card {
+  max-width: 100%;
+  max-height: auto;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.big-card2 {
+  max-width: 100%;
+  max-height: auto;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.big-card .row {
+  border: 1px solid #ff8364;
+  border-radius: 7px;
+}
+
+.card-content {
+  border: 1px solid #ff8364;
+  border-radius: 7px;
+}
+
+#serv-card {
+  border: 1px solid #ff8364;
+  border-radius: 7px;
+}
+
+.card-content p {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.card-content h4 {
+  margin-left: 30px;
 }
 .content {
   padding: 30px;
 }
 
+.content img {
+  width: 70%;
+  height: auto;
+  margin-left: 50px;
+}
+
 .content p {
   line-height: 2;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 19.3px;
   color: #687980;
   padding-left: 20px;
 }
 
 section {
-  border-radius: 8px;
-  margin: 60px;
-  padding: 25px;
-}
-
-#box {
-  margin: 60px;
-  border: 1px solid #ffdaa9;
-  border-radius: 8px;
-  padding: 25px;
+  margin-bottom: 60px;
 }
 
 h4 {
-  font-weight: 400;
-  font-size: 20px;
+  font-weight: 600;
   line-height: 2;
   opacity: 0.7;
-  color: #ffb677;
+  color: #ff8364;
+  font-size: 22px;
 }
 p {
-  font-weight: 100;
+  font-weight: 200;
   font-size: 18px;
   line-height: 1.5;
+  color: #687980;
+}
+
+.card-group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+.pack-card {
+  background: #edf7fa;
+  margin: 70px 80px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-title {
+  color: #ff8364;
+  font-family: var(--heading-font);
+  max-width: 100%;
 }
 ul {
-  font-weight: 100;
-  font-size: 18px;
-  line-height: 1.5;
-  text-align: center;
-  list-style: none;
-}
-ul i {
-  color: #ff8364;
-  font-size: 12px;
-}
-.contact-section {
-  text-align: center;
-  margin: 80px;
-  color: #ff8364;
-}
-
-.contact-section a {
-  color: #ffb677;
-  transition: all 100ms ease-in-out;
-}
-
-.contact-section a:hover {
-  color: #ff8364;
-}
-
-#back-link {
-  text-align: center;
-}
-
-#back-link a {
-  color: #6fa3a9;
-}
-
-#contacto {
-  border: 1px solid #edf7fa;
-  border-radius: 8px;
-  background: #edf7fa;
-  color: #44558f;
-  padding: 30px 100px;
-  margin: 0;
-}
-.button {
-  border: 1px solid #6c5ce7;
-  border-radius: 10px;
-  background: #6c5ce7;
-  color: #fff;
-  text-decoration: none;
+  color: #687980;
+  font-family: var(--text-font);
   font-size: 20px;
-  padding: 20px;
+  line-height: 1.5;
+  font-weight: 200;
+}
+
+.button {
+  border: 1px solid #ff8364;
+  border-radius: 30px;
+  background: #ff8364;
+  color: #edf7fa;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 40px;
+  font-weight: 200;
 }
 
 .button:hover {
   background: transparent;
-  color: #6c5ce7;
+  color: #5f6caf;
+  border: 1px solid #ffb677;
 }
+
+#contact-button {
+  border: 1px solid #5f6caf;
+  background: #5f6caf;
+}
+
+#contact-button:hover {
+  border: 1px solid #edf7fa;
+  background: transparent;
+  color: #edf7fa;
+}
+
+#back-link {
+  color: #ff8364;
+}
+.contact-section {
+  text-align: center;
+  margin: 80px;
+}
+
+.contact-icon {
+  color: #5f6caf;
+}
+
 footer .h-divider {
   margin-top: 5px;
   margin-bottom: 5px;
@@ -173,7 +225,6 @@ footer {
 }
 
 footer .contact-box {
-  background: var(--secondary-color);
   padding: 30px 120px;
   border-radius: 10px;
 }
@@ -184,20 +235,20 @@ footer .contact-box p {
 
 footer .email-link {
   text-decoration: none;
-  color: #6c5ce7;
+  color: #edf7fa;
   font-size: 20px;
   text-align: center;
   transition: all 100ms ease-in-out;
 }
 
 footer .email-link:hover {
-  color: #ff8364;
+  color: #5f6caf;
 }
 
 footer .social-links a {
   margin: 0 20px;
-  color: #6c5ce7;
-  background: #fff;
+  color: #edf7fa;
+  background: transparent;
   padding: 10px 14px;
   border-radius: 50%;
   font-size: 22px;
@@ -205,6 +256,6 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-  color: white;
-  background: #6c5ce7;
+  color: #edf7fa;
+  background: #ff8364;
 }
