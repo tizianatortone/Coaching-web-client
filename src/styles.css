@@ -77,93 +77,76 @@ h2 {
   padding-top: 25px;
 }
 
-.big-card {
-  max-width: 100%;
-  max-height: auto;
-  background: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.big-card2 {
-  max-width: 100%;
-  max-height: auto;
-  background: #fff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.big-card .row {
-  border: 1px solid #ff8364;
-  border-radius: 7px;
-}
-
-.card-content {
-  border: 1px solid #ff8364;
-  border-radius: 7px;
-}
-
-#serv-card {
-  border: 1px solid #ff8364;
-  border-radius: 7px;
-}
-
-.card-content p {
-  margin-left: 30px;
-  margin-bottom: 30px;
-}
-
-.card-content h4 {
-  margin-left: 30px;
-}
-.content {
-  padding: 30px;
-}
-
-.content img {
-  width: 70%;
-  height: auto;
-  margin-left: 50px;
-}
-
-.content p {
-  line-height: 2;
-  font-weight: 200;
-  font-size: 19.3px;
-  color: #687980;
-  padding-left: 20px;
-}
-
 section {
   margin-bottom: 60px;
 }
 
-h4 {
+.card {
+  max-width: 100%;
+  max-height: auto;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: center;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 70px;
+}
+.card-content {
+  border: 1px solid #ff8364;
+  border-radius: 7px;
+  padding: 30px;
+}
+
+.card-content h4 {
+  margin-left: 30px;
   font-weight: 600;
   line-height: 2;
   opacity: 0.7;
   color: #ff8364;
   font-size: 22px;
 }
-p {
-  font-weight: 200;
-  font-size: 18px;
-  line-height: 1.5;
-  color: #687980;
+
+.card img {
+  width: 70%;
+  height: auto;
 }
 
-.card-group {
+.card-content p {
+  line-height: 2;
+  font-weight: 200;
+  font-size: 19.3px;
+  color: #687980;
+  padding-left: 20px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+#aboutme {
+  font-size: 19px;
+  line-height: 3;
+}
+.packs {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-bottom: 70px;
 }
-.pack-card {
-  background: #edf7fa;
-  margin: 70px 80px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
 
+.pack-element {
+  transition: all 0.5s ease-in-out;
+}
+.pack-element:hover {
+  transform: scale(1.5) perspective(0.5px);
+  background: #edf7fa;
+  border-radius: 10px;
+}
 .card-title {
   color: #ff8364;
   font-family: var(--heading-font);
   max-width: 100%;
+  margin: 20px;
 }
 ul {
   color: #687980;
@@ -171,8 +154,8 @@ ul {
   font-size: 20px;
   line-height: 1.5;
   font-weight: 200;
+  margin: 20px;
 }
-
 .button {
   border: 1px solid #ff8364;
   border-radius: 30px;
@@ -202,7 +185,7 @@ ul {
 }
 
 #back-link {
-  color: #ff8364;
+  color: #edf7fa;
 }
 .contact-section {
   text-align: center;
@@ -213,15 +196,19 @@ ul {
   color: #5f6caf;
 }
 
+.card-content a {
+  color: #5f6caf;
+}
+footer {
+  margin: 60px 0;
+}
+
 footer .h-divider {
   margin-top: 5px;
   margin-bottom: 5px;
   height: 1px;
   width: 100%;
   border-top: 1px solid lightgray;
-}
-footer {
-  margin: 60px 0;
 }
 
 footer .contact-box {
@@ -235,14 +222,14 @@ footer .contact-box p {
 
 footer .email-link {
   text-decoration: none;
-  color: #edf7fa;
+  color: #5f6caf;
   font-size: 20px;
   text-align: center;
   transition: all 100ms ease-in-out;
 }
 
 footer .email-link:hover {
-  color: #5f6caf;
+  color: #edf7fa;
 }
 
 footer .social-links a {
@@ -258,4 +245,58 @@ footer .social-links a {
 footer .social-links a:hover {
   color: #edf7fa;
   background: #ff8364;
+}
+
+@media (max-width: 960px) {
+  .hero {
+    background-size: 100% 100%;
+  }
+  .hero h1 {
+    font-size: 80px;
+  }
+  .hero h2 {
+    font-size: 36px;
+  }
+
+  #phrase {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+
+  .card {
+    width: 80%;
+    display: block;
+  }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .card-content p {
+    font-size: 13px;
+  }
+  #leyenda {
+    display: none;
+  }
+  .card-content img {
+    display: none;
+  }
+  .packs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .packs ul {
+    text-align: center;
+    list-style: none;
+  }
+
+  #aboutme {
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+  }
 }
