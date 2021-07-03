@@ -49,17 +49,19 @@
         <nav
           class="navbar navbar-expand-lg sticky-top mb-5 justify-content-center"
         >
-          <a class="nav-link active" aria-current="page" href="#inicio"
-            >Inicio</a
-          >
-
           <a class="nav-link" href="#sobremi">Sobre mi</a>
+
+          <a class="nav-link" href="#inicio">Coaching</a>
 
           <a class="nav-link" href="#faqs">Preguntas Frecuentes</a>
 
           <a class="nav-link" href="#servicios">Servicios</a>
 
           <a class="nav-link" href="/contacto.html">Contacto</a>
+
+          <a class="nav-link" href="/basesycondiciones.html"
+            >Bases y Condiciones</a
+          >
         </nav>
       </header>
       <div class="hero-text">
@@ -76,7 +78,7 @@
         <br />
         <br />
         <div class="contact-box text-center">
-          <a href="#inicio" title="Navegar por la web" class="button">
+          <a href="#sobremi" title="Navegar por la web" class="button">
             Conocer más
           </a>
         </div>
@@ -85,6 +87,44 @@
     <br />
     <br />
     <div class="container mt-5">
+      <section id="sobremi">
+        <div class="card mx-auto">
+          <div class="m-4 card-content">
+            <h2>Sobre mi...</h2>
+            <div class="mt-4 box">
+              <span class="box-element">
+                <p class="m-5">
+                  <em>
+                    "De profesión soy abogada, magister en derecho empresarial y
+                    Coach certificada interncional. Ejerzo mi profesión desde
+                    los 24 años de edad, asesorando a empresas y a personas
+                    individuales en sus asuntos legales de familia, sucesiones y
+                    bienes. Sin embargo, es a través del Coaching donde he
+                    podido aprender a acompañar a otro en su redescubrimiento y
+                    verlo funcionar como un tandem en el logro de sus metas y
+                    sueños. Mi tarea como Coach es servirte, ayudarte a que
+                    descubras tus fortalezas, corrijas o compenses tus
+                    debilidades, con el unico fin de serte útil a vos mismo y al
+                    mundo que te rodea..."
+                  </em>
+                </p>
+              </span>
+
+              <span class="box-element">
+                <img
+                  src="/media/profilepic.JPG"
+                  alt="Coach Profesional Ivana Karina Chittó"
+                  class="img-fluid rounded img-thumbnail mt-5 me-5 ms-5 show-on-scroll"
+                />
+                <p class="ms-5 mt-1 mb-5 text-muted" id="leyenda">
+                  Coach Profesional: Ivana Karina Chittó
+                </p>
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="content" id="inicio">
         <div class="card mx-auto">
           <div class="m-4 card-content">
@@ -124,43 +164,6 @@
         </div>
       </section>
 
-      <section id="sobremi">
-        <div class="card mx-auto">
-          <div class="m-4 card-content">
-            <h2>Sobre mi...</h2>
-            <div class="mt-4 box">
-              <span class="box-element">
-                <p class="m-5">
-                  <em>
-                    "De profesión soy abogada, magister en derecho empresarial y
-                    Coach certificada interncional. Ejerzo mi profesión desde
-                    los 24 años de edad, asesorando a empresas y a personas
-                    individuales en sus asuntos legales de familia, suceciones y
-                    bienes. Sin embargo, es a través del Coaching donde he
-                    podido aprender a acompañar a otro en su redescubrimiento y
-                    verlo funcionar como un tandem en el logro de sus metas y
-                    sueños. Mi tarea como Coach es servirte, ayudarte a que
-                    descubras tus fortalezas, corrijas o compenses tus
-                    debilidades, con el unico fin de serte útil a vos mismo y al
-                    mundo que te rodea..."
-                  </em>
-                </p>
-              </span>
-
-              <span class="box-element">
-                <img
-                  src="/media/profilepic.JPG"
-                  alt="Coach Profesional Ivana Karina Chittó"
-                  class="img-fluid rounded img-thumbnail mt-5 me-5 ms-5 show-on-scroll"
-                />
-                <p class="ms-5 mt-1 mb-5 text-muted" id="leyenda">
-                  Coach Profesional: Ivana Karina Chittó
-                </p>
-              </span>
-            </div>
-          </div>
-        </div>
-      </section>
       <section id="faqs">
         <div class="card mx-auto">
           <div class="m-4 card-content">
@@ -251,6 +254,20 @@
                 <div class="h-divider"></div>
               </span>
             </div>
+            <div class="text-center">
+              <a
+                href="/basesycondiciones.html"
+                target="_blank"
+                class="text-center"
+                >Ver bases y condiciones</a
+              >
+            </div>
+            <p id="message" class="text-center text-muted">
+              <em>
+                *Contáctanos para conocer las formas de pago y reservar tus
+                sesiones</em
+              >
+            </p>
           </div>
         </div>
       </section>
@@ -260,8 +277,7 @@
           href="/contacto.html"
           title="Contactate conmigo"
           target="_self"
-          class="button"
-          id="contact-button"
+          class="button contact-button"
         >
           Contacto
         </a>
