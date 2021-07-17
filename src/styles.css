@@ -146,16 +146,11 @@ section {
 .box {
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 70px;
 }
 
 .box-element {
   flex: 1;
-}
-
-.box {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 70px;
 }
 
 .pack-element {
@@ -358,11 +353,7 @@ footer .social-links a:hover {
     text-align: center;
     margin: 0;
   }
-
   #leyenda {
-    display: none;
-  }
-  .card-content img {
     display: none;
   }
 
