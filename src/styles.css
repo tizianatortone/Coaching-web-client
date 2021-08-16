@@ -261,6 +261,12 @@ section {
 
 .card-content a:hover {
   color: #ff8364;
+  cursor: pointer;
+}
+
+h6 #currencyLink1,
+#currencyLink2 {
+  color: #ff8364;
 }
 
 footer {
