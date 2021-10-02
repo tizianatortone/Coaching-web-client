@@ -36,7 +36,7 @@ function dollarPrice() {
 function euroPrice() {
   document.getElementById("price1").innerHTML = "35 EUR";
   document.getElementById("price2").innerHTML = "80 EUR";
-  document.getElementById("price3").innerHTML = "120 EUR";
+  document.getElementById("price3").innerHTML = "130 EUR";
   document.getElementById("price4").innerHTML = "220 EUR";
   document.getElementById("currencyLink1").innerHTML = "USD";
   document.getElementById("currencyLink2").innerHTML = null;
